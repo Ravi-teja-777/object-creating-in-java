@@ -1,0 +1,33 @@
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+public class Tharuna{
+    static void sree(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\nEnter your phone name    : ");
+        String phone_name = input.nextLine();
+        System.out.print("Enter your phone color   : ");
+        String phone_color = input.nextLine();
+        System.out.print("Enter your phone RAM/ROM : ");
+        String phone_ram = input.nextLine();
+        System.out.print("Enter your phone price   : ");
+        int phone_price = input.nextInt();
+        System.out.println("\nYour phone name : "+phone_name);
+        System.out.println("Your phone name : "+phone_color);
+        System.out.println("Your phone name : "+phone_ram);
+        System.out.println("Your phone name : "+phone_price);
+    
+        
+    }
+    public static void main (String args[]){
+        Scanner x = new Scanner(System.in);
+        System.out.print("Enter how many objects do you want  : ");
+        int range = x.nextInt();
+        
+        for (int i =0; i<range;i++){
+            Tharuna obji = new Tharuna();
+            obji.sree();
+        }
+    }
+}
